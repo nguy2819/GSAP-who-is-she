@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    color:black;
+    font-family: 'Rock Salt';
+    padding: 9em;
+    background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+h1{
+    font-family: 'Great Vibes';
+    font-size: 5em;
+    width: 25%;
+    color: red;
+    line-height: 1em;
+}
+
+button{
+    background-color: #ea9ab2;
+    border: 1px solid #ea9ab2;
+    color: #985277;
+    font-family: 'Rock Salt';
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+.panel{
+    position: absolute;
+    width: 55%;
+    bottom: 0;
+    right: 0;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+    padding: 15% 7%;
+    // height: 100vh;
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    img {
+        width: 240px;
+        float: left;
+        margin-right: 50px;
+        opacity:0;
+        transform: translateY(-200px);
+    }
+
+    p{
+        font-size: 1.9em;
+        width: 100%;
+        color: #985277;
+        opacity:0;
+
+    }
+
+    .box{
+        border: 5px solid lightgray;
+        width: 95%;
+        height: 40%;
+        position: absolute;
+        left: -7%;
+        top: 20%;
+        z-index: -1;
+        opacity:0;
+        transform: scale(0);
+    }
+}

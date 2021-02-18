@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title> GSAP </title>
+</head>
+<body>
+    <h1>Tien Nguyen Borland</h1>
+    <button id="cta">"Who is she?"</button>
+
+    <div class="panel">
+        <img src="images/135-1351351_918x1148-pink-roses-png-v-rose-white-background.png" id="rose"/>
+        <p>The Lady Who Smashed Codes</p>
+        <div class="box"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <script>
+        document.getElementById('cta').addEventListener('click', function() {
+            gsap.to('.panel', {duration: 1, scaleY: 1, height:'100vh', ease: "bounce.out"});
+            gsap.to('#rose', {duration: 1, opacity: 1, y: 0, delay: 1, ease: "back.out(2)"});
+            gsap.to('p', {duration: 1, opacity: 1, y: 20, delay: 1.4});
+            gsap.to('.box', {duration: 3, opacity: 1, scale: 1, ease: "elastic.out(1, 0.3)"});
+        })
+    </script>
+
+</body>
+</html>
